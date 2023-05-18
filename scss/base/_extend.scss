@@ -1,0 +1,86 @@
+// display flex
+
+%flex_center_between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+%flex_center_evenly{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+%flex_center_around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+%flex_colum{
+    display: flex;
+    flex-direction: column;
+}
+
+// botones
+
+%boton_size1{
+    text-decoration: none;
+	width: fit-content;
+	padding: 10px 10%;
+	margin: 20px 10%; 
+    text-align: center;
+    border-radius: 20px;
+    font-size: 14px;
+}
+%boton_size2{
+    width: fit-content;
+	padding: 16px 3%;
+	justify-content: center;
+	border-radius: 30px;
+	position: absolute;
+}
+
+// texto
+
+%tex_style1{
+    text-align: start;
+	padding: 70px 10% 20px 10%;
+	font-size: 40px;
+}
+%tex_style2{
+    text-align: start;
+	padding: 20px 10% 30px 10%;
+	font-size: 18px;
+}
+
+// cuadros vision empresa
+
+%cuadro_info{
+    width: 52%;
+	height: 430px;
+	display: flex;
+	flex-direction: column;
+}
+
+// imagenes
+
+%img_size1{
+    width: 48%;
+	height: 430px;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: $font-family_1;
+}
+a {
+	color: $color_1;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+

@@ -1,0 +1,269 @@
+// botones
+
+.boton_verde {
+	background-color: map-get($boton, bg-c);
+    @extend %boton_size2;
+}
+.boton_bordergreen {
+	border: map-get($boton, border_2);
+	color: map-get($boton, col-2);
+    @extend %boton_size1;
+}
+.boton_borderblue {
+	border: map-get($boton, border_3);
+	color: map-get($boton, col-3);
+    @extend %boton_size1;
+}
+.boton_border {
+	border: map-get($boton, border_1 );
+    @extend %boton_size1;
+	color: map-get($boton, col-1 );
+	height: 40px;
+	padding: 10px 8%;
+}
+
+// texto
+
+.texto_center {
+	@extend %flex_colum;
+	text-align: map-get($texto, align_c);
+	font-size: map-get($texto, size-2);
+	margin: map-get($texto, margin-2);
+	padding: 30px 2%;
+	gap: 25px;
+}
+.titulo_type1 {
+	text-align: map-get($texto, align_c);
+	color: $color_2;
+	padding: 10px 10%;
+	margin: map-get($texto, margin-1);
+	font-size: map-get($texto, size-3);
+}
+.texto_type1 {
+	text-align: map-get($texto, align_c);
+	color: $color_2;
+	padding: 30px 10%;
+	margin: map-get($texto, margin-1);
+	font-size: map-get($texto, size-1);
+}
+.titulo {
+	@extend %tex_style1;
+	color: $color_2;
+}
+.texto {
+	@extend %tex_style2;
+	color: $color_2;
+}
+.titulo_type_blue {
+	@extend %tex_style1;
+	color: $color_3;
+}
+.texto_type_blue {
+	@extend %tex_style2;
+	color: $color_3;
+}
+.titulo_blog {
+	h1 {
+		h2 {
+			p {
+				ul {
+					text-align: map-get($texto, align_s);
+					font-size: 30px;
+					color: $color_1;
+				}
+			}
+		}
+	}
+}
+
+// cartas de productos
+
+.card_mia {
+	border: 1px solid $color_1;
+	width: 300px;
+	height: auto;
+	margin: 60px 0%;
+	img {
+		border-bottom: 1px solid $color_1;
+		width: 100%;
+		height: auto;
+	}
+}
+.card-titlemio {
+	font-size: 18px;
+}
+.card-textmio {
+	font-size: 18px;
+}
+.card_body_mio {
+	@extend %flex_colum;
+	padding: 10px 0% 10px 3%;
+	gap: 10px;
+}
+.carta_productos {
+    @extend %flex_center_evenly;
+	flex-direction: row;
+	margin: 50px 7% 100px 7%;
+	gap: 20px;
+}
+.carta_productos_2 {
+    @extend %flex_center_evenly;
+	flex-direction: row;
+    flex-wrap: wrap;
+	margin: 50px 7% 100px 7%;
+	gap: 20px;
+}
+.marcas {
+	width: 100%;
+	height: auto;
+	background-color: $background-color_3;
+	padding: 2px 3% 0px 3%;
+}
+.logos {
+    @extend %flex_center_around;
+	flex-direction: row;
+	padding: 0px 5% 80px 5%;
+	margin: 0px 1% 60px 1%;
+}
+.cuadro_verde {
+    @extend %cuadro_info;
+	background-color: $background-color_2;
+}
+.cuadro_azul {
+    @extend %cuadro_info;
+	background-color: $background-color_4;
+}
+.container_reverse {
+	display: flex;
+	flex-direction: row-reverse;
+	img {
+		@extend %img_size1;
+	}
+}
+.container_flex {
+	display: flex;
+	img {
+		@extend %img_size1;
+	}
+}
+.fondo_verde {
+	background-color: $background-color_2;
+	width: 100%;
+	margin: 80px 0%;
+	padding: 0px 0% 50px 0%;
+}
+.carta_blog {
+	width: 300px;
+	height: auto;
+	margin: 30px 0%;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.carta_blogflex {
+    @extend %flex_center_evenly;
+	flex-direction: row;
+	gap: 20px;
+}
+.carta_img {
+    @extend %flex_center_between;
+	flex-direction: row;
+    flex-wrap: wrap;
+	margin: 0px 5%;
+}
+.busqueda {
+    @extend %flex_center_between;
+	flex-direction: row;
+	width: 100%;
+	height: 200px;
+	padding: 180px 5% 80px 5%;
+}
+
+.mobile {
+	display: none;
+}
+@media (max-width: 576px) {
+	.ocultar {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	p {
+		font-size: 16px;
+	}
+	.texto_center {
+		font-size: 22px;
+	}
+	.texto_type1 {
+		font-size: 16px;
+	}
+	.carta_productos {
+        @extend %flex_center_evenly;
+	}
+	.card_mia {
+		width: 200px;
+		margin: 0px 0px;
+	}
+	.logos {
+		img {
+			width: 120px;
+			height: auto;
+		}
+	}
+	.mobile_flex {
+		flex-direction: column;
+		width: 100%;
+		img {
+			flex-direction: column;
+			width: 100%;
+		}
+	}
+	.cuadro_verde {
+		width: 100%;
+	}
+	.cuadro_azul {
+		width: 100%;
+	}
+	.titulo {
+		font-size: 24px;
+	}
+	.titulo_type_blue {
+		font-size: 24px;
+	}
+	.texto {
+		font-size: 16px;
+	}
+	.texto_type_blue {
+		font-size: 16px;
+	}
+	.boton_bordergreen {
+		font-size: 12px;
+		margin: 2px 10%;
+	}
+	.boton_borderblue {
+		font-size: 12px;
+		margin: 2px 10%;
+	}
+	.carta_blog {
+		img {
+			width: 100%;
+			height: 200px;
+		}
+		width: 80%;
+	}
+	.carta_blogflex {
+        img {
+			width: 100%;
+			height: 200px;
+		}
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+}
