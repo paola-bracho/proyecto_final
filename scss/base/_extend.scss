@@ -39,7 +39,6 @@
 	border-radius: 30px;
 	position: absolute;
 }
-
 // texto
 
 %tex_style1{
@@ -51,6 +50,10 @@
     text-align: start;
 	padding: 20px 10% 30px 10%;
 	font-size: 18px;
+}
+%tex_black_a{
+	color: $color_1;
+	text-decoration: none;
 }
 
 // cuadros vision empresa
@@ -83,4 +86,8 @@ ul {
 	list-style: none;
 }
 
+.black{
+	text-decoration: none;
+	color: $color_1;
+}
 

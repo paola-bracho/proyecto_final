@@ -80,8 +80,14 @@ ul {
   list-style: none;
 }
 
+.black {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   position: fixed;
+  z-index: 10;
   background-color: white;
   width: 100%;
   height: 70px;
@@ -103,6 +109,10 @@ header .nav_links li a {
   font-size: 16px;
   color: black;
   text-decoration: none;
+}
+
+.bg-body-tertiary-mio {
+  background-color: none;
 }
 
 .imagen_portada {
@@ -393,6 +403,12 @@ header .nav_links li a {
     height: 200px;
   }
 }
+.carousel-mio {
+  width: 80%;
+  height: auto;
+  margin: 10%;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
