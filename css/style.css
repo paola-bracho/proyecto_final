@@ -22,6 +22,14 @@
   flex-direction: column;
 }
 
+.carrusel {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
 .boton_border, .boton_borderblue, .boton_bordergreen {
   text-decoration: none;
   width: fit-content;
@@ -83,6 +91,15 @@ ul {
 .black {
   text-decoration: none;
   color: black;
+}
+
+.margin {
+  margin: 1% 5%;
+  padding: 5px 0px;
+}
+
+article div h2, article div h1 {
+  margin: 25px 0px;
 }
 
 header {
@@ -407,6 +424,10 @@ header .nav_links li a {
   width: 80%;
   height: auto;
   margin: 10%;
+}
+
+.color_black {
+  color: black;
 }
 
 .footer {

@@ -75,6 +75,16 @@
 		}
 	}
 }
+article{
+	div{
+		h1{
+			@extend %title_margin;
+		}
+		h2{
+			@extend %title_margin;
+		}
+	}
+}
 
 // cartas de productos
 
@@ -179,6 +189,9 @@
 	height: 200px;
 	padding: 180px 5% 80px 5%;
 }
+.margin{
+	@extend %mobile_margin
+}
 
 .mobile {
 	display: none;
@@ -265,11 +278,17 @@
 		justify-content: center;
 		align-items: center;
 	}
-	
 }
 // carrucel
 .carousel-mio{
 	width: 80%;
 	height: auto;
 	margin: 10%;
+}
+.carrusel{
+	@extend %flex_carrusel;
+}
+
+.color_black{
+	color: black;
 }
