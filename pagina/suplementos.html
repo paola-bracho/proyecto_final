@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿Necesitas un aporte extra de energía y vitalidad? En esta página te presentamos los mejores suplementos y vitaminas naturales, ideales para complementar tu dieta y mejorar tu salud.">
+    <meta name="keywords" content="suplementos naturales, vitaminas, minerales, salud natural, energía, vitalidad">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Suplementos</title>
+    <title>Suplementos - Sanarte natural</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
@@ -28,21 +30,19 @@
             </div>
           </nav>
             <div class="icono">
-                <img src="../img/usuario.png" alt="">
-                <img src="../img/lupa.png" alt="">
-                <img src="../img/carrito.png" alt="">
+              <img src="../img/usuario.png" alt="usuario">
+              <img src="../img/lupa.png" alt="lupa de busqueda">
+              <img src="../img/carrito.png" alt="carrito de compras">
             </div>
     </header>
     <main>
-        <article>
-            <img src="../img/suplementoos.jpg" width="100%" style="margin-top: 65px;" alt="un hombre cargando una cesta de madera con vegetales">
-        <div class="texto_center">
-            <h2>SUPLEMENTOS</h2>
-            <p>Ingredientes premium y fórmulas personalizadas para complementar tu dieta</p>
-        </div>
-        </article>
+      <div class="imagen_portada">
+        <img src="../img/suplementoos.jpg" alt="un hombre cargando una cesta de madera con vegetales">
+        <h1 class="t-mbl"><strong>SUPLEMENTOS</strong></h1>
+        <p class="msg_portada">Ingredientes premium y fórmulas personalizadas para complementar tu dieta</p>
+      </div>
         <section>
-            <div class="carta_productos_2">
+            <div class="carta_productos_2 ocultar">
                 <div class="card_mia" style=" width: 300px">
                     <img src="../img/suplemento_1.jpg" class="card-img-top" alt="Probióticos para mujeres">
                     <div class="card_body_mio">
@@ -101,6 +101,92 @@
                 </div>
             </div>
         </section>
+        <!-- carrucel -->
+        <div id="carouselExample" class="carousel slide mobile carrusel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carruprod">
+                  <img src="../img/suplemento_1.jpg" class="d-block w-60" alt="Probióticos para mujeres">
+                  <div class="black">
+                    <h3><strong>Probióticos para mujeres</strong></h3>
+                    <h4>26.99$</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carruprod">
+                  <img src="../img/suplemento_2.jpg" class="d-block w-80" alt="Ashwagandha">
+                  <div class="black">
+                    <h3><strong>Ashwagandha</strong></h3>
+                    <h4>16.99$</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carruprod">
+                  <img src="../img/suplemento_3.jpg" class="d-block w-80" alt="Omega-3 fish oil">
+                  <div class="black">
+                    <h3><strong>Omega-3 fish oil</strong></h3>
+                    <h4>29.99$</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carruprod">
+                  <img src="../img/suplemento_4.jpg" class="d-block w-60" alt="Vitamin B Complex with vitamin C">
+                  <div class="black">
+                    <h3><strong>Vitamin B Complex with vitamin C</strong></h3>
+                    <h4>14.99$</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carruprod">
+                  <img src="../img/suplemento_5.jpg" class="d-block w-80" alt="Futurebiotics ThinkFast">
+                  <div class="black">
+                    <h3><strong>Futurebiotics ThinkFast</strong></h3>
+                    <h4>41.99$</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carruprod">
+                  <img src="../img/suplemento_6.jpg" class="d-block w-80" alt="Ginkgo Biloba">
+                  <div class="black">
+                    <h3><strong>Ginkgo Biloba</strong></h3>
+                    <h4>19.99$</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carruprod">
+                  <img src="../img/suplemento_7.jpg" class="d-block w-80" alt="Arandano rojo">
+                  <div class="black">
+                    <h3><strong>Arandano rojo</strong></h3>
+                    <h4>20.50$</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carruprod">
+                  <img src="../img/suplemento_8.jpg" class="d-block w-80" alt="Melatonina 10mg">
+                  <div class="black">
+                    <h3><strong>Melatonina 10mg</strong></h3>
+                    <h4>26.99$</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- carrucel -->
     </main>
     <footer>
         <nav class="footer">

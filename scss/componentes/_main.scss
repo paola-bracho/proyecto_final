@@ -188,6 +188,7 @@ article{
 	width: 100%;
 	height: 200px;
 	padding: 180px 5% 80px 5%;
+	margin: 0 5%;
 }
 .margin{
 	@extend %mobile_margin
@@ -262,6 +263,15 @@ article{
 		font-size: 12px;
 		margin: 2px 10%;
 	}
+	.busqueda{
+		flex-direction: column;
+		padding: 10rem 5%;
+		margin: 0;
+		.boton_border{
+			height: 40px;
+			padding: 10px 25%;
+		}
+	}
 	.carta_blog {
 		img {
 			width: 100%;
@@ -278,6 +288,17 @@ article{
 		justify-content: center;
 		align-items: center;
 	}
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.hoja{
+		img{
+			height: 100px;
+
+		}
+	}
 }
 // carrucel
 .carousel-mio{
@@ -287,8 +308,37 @@ article{
 }
 .carrusel{
 	@extend %flex_carrusel;
+	padding: 0px 15%;
 }
+// Galeria blog
 
-.color_black{
-	color: black;
+.fotos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0 5rem 0;
+	.galeria{
+		display: grid;
+		grid-template-columns: 330px 330px 330px;
+		grid-template-rows: 350px 695px 695px;
+		grid-gap: 4rem;
+		.img-a{
+			grid-column: 1/4;
+			img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		}
+	}
+}
+.hoja{
+	@extend %flex_colum;
+	img{
+		object-fit: cover;
+		height: 450px;
+	}
+}
+.card-title{
+	margin: 0;
 }
